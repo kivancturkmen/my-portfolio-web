@@ -28,26 +28,12 @@ Just open `index.html` in your browser. No server needed.
 2. Right-click `index.html` → **Open with Live Server**
 3. Auto-reloads on every save
 
-### Option C — Claude Code
-```bash
-cd portfolio
-# Claude Code will pick up the project automatically
-```
-
 ---
 
-## 🖼️ Adding Your Profile Photo
+## 🖼️ Profile Photo
 
-1. Add your photo to the project folder and name it `profile.jpg`  
-   *(or any name — just update the `src` in `index.html`)*
-2. In `index.html`, find the About section and replace:
-
-```html
-<!-- Replace the emoji below with your photo: -->
-<span class="ph-ic">🧑‍💻</span>
-```
-
-with:
+Place your photo in the project folder as `profile.jpg`.
+It is referenced in the Hero section of `index.html`:
 
 ```html
 <img src="profile.jpg" alt="İsmail Kıvanç Türkmen" />
@@ -61,7 +47,7 @@ with:
 |-----------------------|--------------------------------|
 | Name / title          | `index.html` → Hero section    |
 | About text            | `index.html` → About section   |
-| Skill percentages     | `index.html` → Skills section  |
+| Skills & tech tags    | `index.html` → Skills section  |
 | Work history          | `index.html` → Experience      |
 | Projects              | `index.html` → Projects        |
 | LinkedIn / GitHub URL | `index.html` → Contact section |
