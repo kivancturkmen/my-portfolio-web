@@ -139,7 +139,7 @@ nav {
 .eyebrow {
   display: inline-flex; align-items: center; gap: 0.6rem;
   font-family: var(--fm);
-  font-size: 0.82rem; color: var(--teal);
+  font-size: 1rem; color: var(--teal);
   letter-spacing: 0.16em; text-transform: uppercase;
   margin-bottom: 1.5rem;
   opacity: 0; animation: rise 0.7s 0.15s ease both;
@@ -249,8 +249,10 @@ section { padding: 6rem max(3rem, calc((100% - 1280px) / 2)); position: relative
 
 /* ── ABOUT ── */
 .about-g {
-  display: grid; grid-template-columns: 320px 1fr;
-  gap: 5rem; align-items: start;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 5rem;
+  align-items: start;
 }
 
 .photo-wrap { position: relative; }
@@ -276,8 +278,8 @@ section { padding: 6rem max(3rem, calc((100% - 1280px) / 2)); position: relative
 .about-txt p strong { color: var(--white); font-weight: 500; }
 
 .meta-g {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 0.75rem; margin-top: 2rem;
+  display: flex; flex-direction: column;
+  gap: 0.75rem;
 }
 .meta-b {
   padding: 1rem 1.2rem;
@@ -285,6 +287,13 @@ section { padding: 6rem max(3rem, calc((100% - 1280px) / 2)); position: relative
   border: 1px solid var(--border-lo);
   border-radius: var(--r);
 }
+.meta-b-cl {
+  display: block; text-decoration: none; color: inherit;
+  transition: border-color 0.25s, background 0.25s;
+}
+.meta-b-cl:hover { border-color: var(--teal); background: var(--teal-glow); }
+.meta-b-cl:hover .meta-vl { color: var(--teal); }
+
 .meta-lb {
   font-family: var(--fm); font-size: 0.75rem;
   letter-spacing: 0.14em; text-transform: uppercase;
@@ -537,7 +546,7 @@ footer {
   .hero { grid-template-columns: 1fr; padding: 8rem 1.5rem 3rem; gap: 2.5rem; }
   .hero-photo-wrap { justify-content: center; }
   .hero-photo { width: 200px; height: 200px; }
-  .about-g { grid-template-columns: 1fr; gap: 2rem; }
+  .about-g { grid-template-columns: 1fr; gap: 2.5rem; }
   .edu-r { grid-template-columns: 1fr; }
   .ct-g { grid-template-columns: 1fr; gap: 2rem; }
   footer { flex-direction: column; gap: 0.4rem; text-align: center; }
